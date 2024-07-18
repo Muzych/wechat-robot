@@ -133,24 +133,6 @@ files = [
 ]
 
 [[package]]
-name = "cheroot"
-version = "10.0.1"
-description = "Highly-optimized, pure-python HTTP server"
-optional = false
-python-versions = ">=3.6"
-files = [
-    {file = "cheroot-10.0.1-py3-none-any.whl", hash = "sha256:6ea332f20bfcede14e66174d112b30e9807492320d737ca628badc924d997595"},
-    {file = "cheroot-10.0.1.tar.gz", hash = "sha256:e0b82f797658d26b8613ec8eb563c3b08e6bd6a7921e9d5089bd1175ad1b1740"},
-]
-
-[package.dependencies]
-"jaraco.functools" = "*"
-more-itertools = ">=2.6"
-
-[package.extras]
-docs = ["furo", "jaraco.packaging (>=3.2)", "python-dateutil", "sphinx (>=1.8.2)", "sphinx-tabs (>=1.1.0)", "sphinxcontrib-apidoc (>=0.3.0)"]
-
-[[package]]
 name = "colorama"
 version = "0.4.6"
 description = "Cross-platform colored terminal text."
@@ -224,32 +206,33 @@ files = [
 ]
 
 [[package]]
-name = "jaraco-functools"
-version = "4.0.1"
-description = "Functools like those found in stdlib"
-optional = false
-python-versions = ">=3.8"
-files = [
-    {file = "jaraco.functools-4.0.1-py3-none-any.whl", hash = "sha256:3b24ccb921d6b593bdceb56ce14799204f473976e2a9d4b15b04d0f2c2326664"},
-    {file = "jaraco_functools-4.0.1.tar.gz", hash = "sha256:d33fa765374c0611b52f8b3a795f8900869aa88c84769d4d1746cd68fb28c3e8"},
-]
-
-[package.dependencies]
-more-itertools = "*"
-
-[package.extras]
-docs = ["furo", "jaraco.packaging (>=9.3)", "jaraco.tidelift (>=1.4)", "rst.linker (>=1.9)", "sphinx (<7.2.5)", "sphinx (>=3.5)", "sphinx-lint"]
-testing = ["jaraco.classes", "pytest (>=6)", "pytest-checkdocs (>=2.4)", "pytest-cov", "pytest-enabler (>=2.2)", "pytest-mypy", "pytest-ruff (>=0.2.1)"]
-
-[[package]]
-name = "linkai"
-version = "0.0.6.0"
-description = "LinkAI python sdk"
+name = "intel-openmp"
+version = "2021.4.0"
+description = "Intel OpenMP* Runtime Library"
 optional = false
 python-versions = "*"
 files = [
-    {file = "linkai-0.0.6.0-py3-none-any.whl", hash = "sha256:df8c2390f37904544a882886925a381b239b3c7d63eb306b371ad1208ac65a7a"},
+    {file = "intel_openmp-2021.4.0-py2.py3-none-macosx_10_15_x86_64.macosx_11_0_x86_64.whl", hash = "sha256:41c01e266a7fdb631a7609191709322da2bbf24b252ba763f125dd651bcc7675"},
+    {file = "intel_openmp-2021.4.0-py2.py3-none-manylinux1_i686.whl", hash = "sha256:3b921236a38384e2016f0f3d65af6732cf2c12918087128a9163225451e776f2"},
+    {file = "intel_openmp-2021.4.0-py2.py3-none-manylinux1_x86_64.whl", hash = "sha256:e2240ab8d01472fed04f3544a878cda5da16c26232b7ea1b59132dbfb48b186e"},
+    {file = "intel_openmp-2021.4.0-py2.py3-none-win32.whl", hash = "sha256:6e863d8fd3d7e8ef389d52cf97a50fe2afe1a19247e8c0d168ce021546f96fc9"},
+    {file = "intel_openmp-2021.4.0-py2.py3-none-win_amd64.whl", hash = "sha256:eef4c8bcc8acefd7f5cd3b9384dbf73d59e2c99fc56545712ded913f43c4a94f"},
 ]
+
+[[package]]
+name = "itchat-uos"
+version = "1.5.0.dev0"
+description = "复活Itchat, 仅仅需要 pip install itchat-uos, good luck !"
+optional = false
+python-versions = "*"
+files = [
+    {file = "itchat_uos-1.5.0.dev0-py3-none-any.whl", hash = "sha256:0293b77cab31fa8c9c2144ea8b5636d43836f47855beba0c603ad3fb1ff89625"},
+]
+
+[package.dependencies]
+pypng = "*"
+pyqrcode = "*"
+requests = "*"
 
 [[package]]
 name = "loguru"
@@ -270,15 +253,22 @@ win32-setctime = {version = ">=1.0.0", markers = "sys_platform == \"win32\""}
 dev = ["Sphinx (==7.2.5)", "colorama (==0.4.5)", "colorama (==0.4.6)", "exceptiongroup (==1.1.3)", "freezegun (==1.1.0)", "freezegun (==1.2.2)", "mypy (==v0.910)", "mypy (==v0.971)", "mypy (==v1.4.1)", "mypy (==v1.5.1)", "pre-commit (==3.4.0)", "pytest (==6.1.2)", "pytest (==7.4.0)", "pytest-cov (==2.12.1)", "pytest-cov (==4.1.0)", "pytest-mypy-plugins (==1.9.3)", "pytest-mypy-plugins (==3.0.0)", "sphinx-autobuild (==2021.3.14)", "sphinx-rtd-theme (==1.3.0)", "tox (==3.27.1)", "tox (==4.11.0)"]
 
 [[package]]
-name = "more-itertools"
-version = "10.2.0"
-description = "More routines for operating on iterables, beyond itertools"
+name = "mkl"
+version = "2021.3.0"
+description = "Intel® oneAPI Math Kernel Library"
 optional = false
-python-versions = ">=3.8"
+python-versions = "*"
 files = [
-    {file = "more-itertools-10.2.0.tar.gz", hash = "sha256:8fccb480c43d3e99a00087634c06dd02b0d50fbf088b380de5a41a015ec239e1"},
-    {file = "more_itertools-10.2.0-py3-none-any.whl", hash = "sha256:686b06abe565edfab151cb8fd385a05651e1fdf8f0a14191e4439283421f8684"},
+    {file = "mkl-2021.3.0-py2.py3-none-macosx_10_15_x86_64.macosx_11_0_x86_64.whl", hash = "sha256:783104af8a75f1a110bd1e2b8af1ba46b0601337f72c61a2f394b3a32f8edd96"},
+    {file = "mkl-2021.3.0-py2.py3-none-manylinux1_i686.whl", hash = "sha256:02600f0e492ddb20f9962e225264824f9487062cc63c0a5bb5b6629a665e373a"},
+    {file = "mkl-2021.3.0-py2.py3-none-manylinux1_x86_64.whl", hash = "sha256:20c74e9bc659b67006a0e1339f0ee022afe43236c05156894bcef2cad8d4c8a9"},
+    {file = "mkl-2021.3.0-py2.py3-none-win32.whl", hash = "sha256:00812c181c083a7da13cced1cf95e5af1fdb209679997bc14ee9c599f44712d2"},
+    {file = "mkl-2021.3.0-py2.py3-none-win_amd64.whl", hash = "sha256:f6d45341ecd327e4638f98c11c537d6b45b293ba6d661120b40d02fe3eb6c1e6"},
 ]
+
+[package.dependencies]
+intel-openmp = "==2021.*"
+tbb = "==2021.*"
 
 [[package]]
 name = "nodeenv"
@@ -541,6 +531,19 @@ socks = ["PySocks (>=1.5.6,!=1.5.7)"]
 use-chardet-on-py3 = ["chardet (>=3.0.2,<6)"]
 
 [[package]]
+name = "tbb"
+version = "2021.12.0"
+description = "Intel® oneAPI Threading Building Blocks (oneTBB)"
+optional = false
+python-versions = "*"
+files = [
+    {file = "tbb-2021.12.0-py2.py3-none-manylinux1_i686.whl", hash = "sha256:f2cc9a7f8ababaa506cbff796ce97c3bf91062ba521e15054394f773375d81d8"},
+    {file = "tbb-2021.12.0-py2.py3-none-manylinux1_x86_64.whl", hash = "sha256:a925e9a7c77d3a46ae31c34b0bb7f801c4118e857d137b68f68a8e458fcf2bd7"},
+    {file = "tbb-2021.12.0-py3-none-win32.whl", hash = "sha256:b1725b30c174048edc8be70bd43bb95473f396ce895d91151a474d0fa9f450a8"},
+    {file = "tbb-2021.12.0-py3-none-win_amd64.whl", hash = "sha256:fc2772d850229f2f3df85f1109c4844c495a2db7433d38200959ee9265b34789"},
+]
+
+[[package]]
 name = "typing-extensions"
 version = "4.12.1"
 description = "Backported and Experimental Type Hints for Python 3.8+"
@@ -589,19 +592,6 @@ docs = ["furo (>=2023.7.26)", "proselint (>=0.13)", "sphinx (>=7.1.2,!=7.3)", "s
 test = ["covdefaults (>=2.3)", "coverage (>=7.2.7)", "coverage-enable-subprocess (>=1)", "flaky (>=3.7)", "packaging (>=23.1)", "pytest (>=7.4)", "pytest-env (>=0.8.2)", "pytest-freezer (>=0.4.8)", "pytest-mock (>=3.11.1)", "pytest-randomly (>=3.12)", "pytest-timeout (>=2.1)", "setuptools (>=68)", "time-machine (>=2.10)"]
 
 [[package]]
-name = "web-py"
-version = "0.62"
-description = "web.py: makes web apps"
-optional = false
-python-versions = ">=3.5"
-files = [
-    {file = "web.py-0.62.tar.gz", hash = "sha256:5ce684caa240654cae5950da8b4b7bc178812031e08f990518d072bd44ab525e"},
-]
-
-[package.dependencies]
-cheroot = "*"
-
-[[package]]
 name = "win32-setctime"
 version = "1.1.0"
 description = "A small Python utility to set file creation time on Windows"
@@ -618,4 +608,4 @@ dev = ["black (>=19.3b0)", "pytest (>=4.6.2)"]
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.11"
-content-hash = "bb651cd6dc1f8d1c102c2320742b7762110931a7b4d30e094d85440822c65029"
+content-hash = "c35a205b9eec5e80376e23d50cbb0fddf630216771f440379c3240a196bb3389"

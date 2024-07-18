@@ -34,8 +34,3 @@ def _get_logger():
 
 # 日志句柄
 logge = _get_logger()
-
-
-# 示例日志记录
-logge.info("This is an info message.")
-logge.error("This is an error message.")
