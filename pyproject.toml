@@ -17,6 +17,8 @@ pre-commit = "^3.7.1"
 loguru = "^0.7.2"
 mkl = "2021.3.0"
 itchat-uos = "1.5.0.dev0"
+rich = "^13.7.1"
+fake-useragent = "^1.5.1"
 
 
 [build-system]
